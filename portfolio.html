@@ -1,0 +1,587 @@
+<!DOCTYPE html>
+<html lang="ru">
+  <head>
+    <meta charset="UTF-8" />
+    <meta
+      http-equiv="X-UA-Compatible"
+      content="IE=edge"
+    />
+    <meta
+      name="viewport"
+      content="width=device-width, initial-scale=1.0"
+    />
+    <title>portfolio</title>
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/modern-normalize/1.1.0/modern-normalize.css"
+      integrity="sha512-Y0MM+V6ymRKN2zStTqzQ227DWhhp4Mzdo6gnlRnuaNCbc+YN/ZH0sBCLTM4M0oSy9c9VKiCvd4Jk44aCLrNS5Q=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+    <link
+      rel="preconnect"
+      href="https://fonts.googleapis.com"
+    />
+    <link
+      rel="preconnect"
+      href="https://fonts.gstatic.com"
+      crossorigin
+    />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Raleway:wght@700&family=Roboto:wght@400;500;700;900&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      rel="stylesheet"
+      href="./css/main.min.css"
+    />
+  </head>
+  <body>
+    <!-- Шапка-->
+    <header class="header">
+      <div class="container header__container">
+        <nav class="navigation">
+          <a
+            class="link logo header__logo"
+            href="/"
+            lang="en"
+            >Web<span class="logo__part--dark"
+              >Studio</span
+            ></a
+          >
+
+          <ul class="list navigation__list">
+            <li class="navigation__item">
+              <a
+                class="link navigation__link"
+                href="./index.html"
+                >Студия</a
+              >
+            </li>
+            <li class="navigation__item">
+              <a
+                class="link navigation__link current"
+                href="#"
+                >Портфолио</a
+              >
+            </li>
+            <li class="navigation__item">
+              <a
+                class="link navigation__link"
+                href="#"
+                >Контакты</a
+              >
+            </li>
+          </ul>
+        </nav>
+        <div class="connect">
+          <a
+            class="link connect__mail"
+            href="mailto:info@devstudio.com"
+          >
+            <svg class="connect__mail-icon">
+              <use
+                href="./images/symbol-defs.svg#icon-envelope"
+              ></use></svg
+            >info@devstudio.com</a
+          >
+          <a
+            class="link connect__tel"
+            href="tel:+380961111111"
+            ><svg class="connect__phone-icon">
+              <use
+                href="./images/symbol-defs.svg#icon-smartphone"
+              ></use>
+            </svg>
+            +38 096 111 11 11</a
+          >
+        </div>
+      </div>
+    </header>
+    <!----------------------ПРИМЕРЫ --------------------------->
+    <main>
+      <section class="examples section">
+        <div class="container">
+          <h1
+            class="examples__title visually-hidden"
+          >
+            Примеры работы
+          </h1>
+          <ul class="list examples__filter">
+            <li class="examples__type">
+              <button
+                class="examples__type-btn"
+                type="button"
+              >
+                Все
+              </button>
+            </li>
+            <li class="examples__type">
+              <button
+                class="examples__type-btn"
+                type="button"
+              >
+                Веб-сайты
+              </button>
+            </li>
+            <li class="examples__type">
+              <button
+                class="examples__type-btn"
+                type="button"
+              >
+                Приложения
+              </button>
+            </li>
+            <li class="examples__type">
+              <button
+                class="examples__type-btn"
+                type="button"
+              >
+                Дизайн
+              </button>
+            </li>
+            <li class="examples__type">
+              <button
+                class="examples__type-btn"
+                type="button"
+              >
+                Маркетинг
+              </button>
+            </li>
+          </ul>
+          <ul class="list grid">
+            <li class="grid__card">
+              <a
+                class="link grid__card-link"
+                href="#"
+              >
+                <div class="grid__card-wrap">
+                  <img
+                    src="./images/techno.jpg"
+                    alt="ноутбук"
+                    width="370"
+                    height="294"
+                  />
+                  <p class="grid__card-text">
+                    Технокряк это современная
+                    площадка распространения
+                    коронавируса. Компании
+                    используют эту платформу для
+                    цифрового шпионажа и атак на
+                    защищённые сервера
+                    конкурентов.
+                  </p>
+                </div>
+                <div class="grid__card-subitem">
+                  <h2 class="grid__card-subtitle">
+                    Технокряк
+                  </h2>
+                  <p class="grid__card-type">
+                    Веб-сайт
+                  </p>
+                </div>
+              </a>
+            </li>
+            <li class="grid__card">
+              <a
+                class="link grid__card-link"
+                href="#"
+              >
+                <div class="grid__card-wrap">
+                  <img
+                    src="./images/no.jpg"
+                    alt="баскетболисты"
+                    width="370"
+                    height="294"
+                  />
+                  <p class="grid__card-text">
+                    Lorem ipsum, dolor sit amet
+                    consectetur adipisicing elit.
+                    Ipsa iusto tempora minus.
+                    Doloremque, numquam.
+                    Temporibus molestias saepe
+                    voluptate iusto fugiat
+                    eligendi illum eaque.
+                    Exercitationem dolorem
+                    similique delectus, suscipit
+                    tempore eius!
+                  </p>
+                </div>
+                <div class="grid__card-subitem">
+                  <h2 class="grid__card-subtitle">
+                    Постер New Orlean vs Golden
+                    Star
+                  </h2>
+                  <p class="grid__card-type">
+                    Дизайн
+                  </p>
+                </div>
+              </a>
+            </li>
+            <li class="grid__card">
+              <a
+                class="link grid__card-link"
+                href="#"
+              >
+                <div class="grid__card-wrap">
+                  <img
+                    src="./images/restoran.jpg"
+                    alt="рыба и логотип"
+                    width="370"
+                    height="294"
+                  />
+                  <p class="grid__card-text">
+                    Lorem ipsum, dolor sit amet
+                    consectetur adipisicing elit.
+                    Ipsa iusto tempora minus.
+                    Doloremque, numquam.
+                    Temporibus molestias saepe
+                    voluptate iusto fugiat
+                    eligendi illum eaque.
+                    Exercitationem dolorem
+                    similique delectus, suscipit
+                    tempore eius!
+                  </p>
+                </div>
+                <div class="grid__card-subitem">
+                  <h2 class="grid__card-subtitle">
+                    Ресторан Seafood
+                  </h2>
+                  <p class="grid__card-type">
+                    Приложение
+                  </p>
+                </div>
+              </a>
+            </li>
+            <li class="grid__card">
+              <a
+                class="link grid__card-link"
+                href="#"
+              >
+                <div class="grid__card-wrap">
+                  <img
+                    src="./images/prime.jpg"
+                    alt="наушники"
+                    width="370"
+                    height="294"
+                  />
+                  <p class="grid__card-text">
+                    Lorem ipsum, dolor sit amet
+                    consectetur adipisicing elit.
+                    Ipsa iusto tempora minus.
+                    Doloremque, numquam.
+                    Temporibus molestias saepe
+                    voluptate iusto fugiat
+                    eligendi illum eaque.
+                    Exercitationem dolorem
+                    similique delectus, suscipit
+                    tempore eius!
+                  </p>
+                </div>
+                <div class="grid__card-subitem">
+                  <h2 class="grid__card-subtitle">
+                    Проект Prime
+                  </h2>
+                  <p class="grid__card-type">
+                    Маркетинг
+                  </p>
+                </div>
+              </a>
+            </li>
+            <li class="grid__card">
+              <a
+                class="link grid__card-link"
+                href="#"
+              >
+                <div class="grid__card-wrap">
+                  <img
+                    src="./images/boxes.jpg"
+                    alt="две коробки"
+                    width="370"
+                    height="294"
+                  />
+                  <p class="grid__card-text">
+                    Lorem ipsum, dolor sit amet
+                    consectetur adipisicing elit.
+                    Ipsa iusto tempora minus.
+                    Doloremque, numquam.
+                    Temporibus molestias saepe
+                    voluptate iusto fugiat
+                    eligendi illum eaque.
+                    Exercitationem dolorem
+                    similique delectus, suscipit
+                    tempore eius!
+                  </p>
+                </div>
+                <div class="grid__card-subitem">
+                  <h2 class="grid__card-subtitle">
+                    Проект Boxes
+                  </h2>
+                  <p class="grid__card-type">
+                    Приложение
+                  </p>
+                </div>
+              </a>
+            </li>
+            <li class="grid__card">
+              <a
+                class="link grid__card-link"
+                href="#"
+              >
+                <div class="grid__card-wrap">
+                  <img
+                    src="./images/inspiration.jpg"
+                    alt="монитор"
+                    width="370"
+                    height="294"
+                  />
+                  <p class="grid__card-text">
+                    Lorem ipsum, dolor sit amet
+                    consectetur adipisicing elit.
+                    Ipsa iusto tempora minus.
+                    Doloremque, numquam.
+                    Temporibus molestias saepe
+                    voluptate iusto fugiat
+                    eligendi illum eaque.
+                    Exercitationem dolorem
+                    similique delectus, suscipit
+                    tempore eius!
+                  </p>
+                </div>
+                <div class="grid__card-subitem">
+                  <h2 class="grid__card-subtitle">
+                    Inspiration has no Borders
+                  </h2>
+                  <p class="grid__card-type">
+                    Веб-сайт
+                  </p>
+                </div>
+              </a>
+            </li>
+            <li class="grid__card">
+              <a
+                class="link grid__card-link"
+                href="#"
+              >
+                <div class="grid__card-wrap">
+                  <img
+                    src="./images/limited-edition.jpg"
+                    alt="журнал"
+                    width="370"
+                    height="294"
+                  />
+                  <p class="grid__card-text">
+                    Lorem ipsum, dolor sit amet
+                    consectetur adipisicing elit.
+                    Ipsa iusto tempora minus.
+                    Doloremque, numquam.
+                    Temporibus molestias saepe
+                    voluptate iusto fugiat
+                    eligendi illum eaque.
+                    Exercitationem dolorem
+                    similique delectus, suscipit
+                    tempore eius!
+                  </p>
+                </div>
+                <div class="grid__card-subitem">
+                  <h2 class="grid__card-subtitle">
+                    Издание Limited Edition
+                  </h2>
+                  <p class="grid__card-type">
+                    Дизайн
+                  </p>
+                </div>
+              </a>
+            </li>
+            <li class="grid__card">
+              <a
+                class="link grid__card-link"
+                href="#"
+              >
+                <div class="grid__card-wrap">
+                  <img
+                    src="./images/lab.jpg"
+                    alt="бирка с логотипом"
+                    width="370"
+                    height="294"
+                  />
+                  <p class="grid__card-text">
+                    Lorem ipsum, dolor sit amet
+                    consectetur adipisicing elit.
+                    Ipsa iusto tempora minus.
+                    Doloremque, numquam.
+                    Temporibus molestias saepe
+                    voluptate iusto fugiat
+                    eligendi illum eaque.
+                    Exercitationem dolorem
+                    similique delectus, suscipit
+                    tempore eius!
+                  </p>
+                </div>
+                <div class="grid__card-subitem">
+                  <h2 class="grid__card-subtitle">
+                    Проект LAB
+                  </h2>
+                  <p class="grid__card-type">
+                    Маркетинг
+                  </p>
+                </div>
+              </a>
+            </li>
+            <li class="grid__card">
+              <a
+                class="link grid__card-link"
+                href="#"
+              >
+                <div class="grid__card-wrap">
+                  <img
+                    src="./images/growing-business.jpg"
+                    alt="работа за ноутбуком"
+                    width="370"
+                    height="294"
+                  />
+                  <p class="grid__card-text">
+                    Lorem ipsum, dolor sit amet
+                    consectetur adipisicing elit.
+                    Ipsa iusto tempora minus.
+                    Doloremque, numquam.
+                    Temporibus molestias saepe
+                    voluptate iusto fugiat
+                    eligendi illum eaque.
+                    Exercitationem dolorem
+                    similique delectus, suscipit
+                    tempore eius!
+                  </p>
+                </div>
+
+                <div class="grid__card-subitem">
+                  <h2 class="grid__card-subtitle">
+                    Growing Business
+                  </h2>
+                  <p class="grid__card-type">
+                    Приложение
+                  </p>
+                </div>
+              </a>
+            </li>
+          </ul>
+        </div>
+      </section>
+    </main>
+
+    <footer class="footer">
+      <div class="container footer__container">
+        <!-- ЛЕВАЯ ЧАСТЬ-->
+        <div class="footer__left">
+          <a
+            class="link logo footer__logo"
+            lang="en"
+            href="/"
+            >Web<span class="logo__part--light"
+              >Studio</span
+            ></a
+          >
+          <address class="address">
+            <ul class="list address__list">
+              <li class="address__item">
+                <a
+                  class="link address__link connect__address"
+                  href="https://goo.gl/maps/BWQuMutgjMq2QXik8"
+                  target="_blank"
+                  >г. Киев, пр-т Леси Украинки,
+                  26</a
+                >
+              </li>
+              <li class="address__item">
+                <a
+                  class="link address__link"
+                  href="mailto:info@example.com"
+                  >info@example.com</a
+                >
+              </li>
+              <li class="address__item">
+                <a
+                  class="link address__link"
+                  href="tel:+380991111111"
+                  >+38 099 111 11 11</a
+                >
+              </li>
+            </ul>
+          </address>
+        </div>
+        <!--ЦЕНТРАЛЬНАЯ ЧАСТЬ-->
+        <div class="footer__center invite">
+          <h3 class="invite__title">
+            присоединяйтесь
+          </h3>
+          <ul class="social list">
+            <li class="social__item">
+              <a class="social__link" href="#">
+                <svg class="social__icon">
+                  <use
+                    href="./images/symbol-defs.svg#icon-instagram"
+                  ></use>
+                </svg>
+              </a>
+            </li>
+            <li class="social__item">
+              <a class="social__link" href="#">
+                <svg class="social__icon">
+                  <use
+                    href="./images/symbol-defs.svg#icon-twitter"
+                  ></use>
+                </svg>
+              </a>
+            </li>
+            <li class="social__item">
+              <a class="social__link" href="#">
+                <svg class="social__icon">
+                  <use
+                    href="./images/symbol-defs.svg#icon-facebook"
+                  ></use>
+                </svg>
+              </a>
+            </li>
+            <li class="social__item">
+              <a class="social__link" href="#">
+                <svg class="social__icon">
+                  <use
+                    href="./images/symbol-defs.svg#icon-linkedin"
+                  ></use>
+                </svg>
+              </a>
+            </li>
+          </ul>
+        </div>
+        <!--ПРАВАЯ ЧАСТЬ-->
+        <div class="footer__right subscribe">
+          <p class="subscribe__title">
+            Подпишитесь на рассылку
+          </p>
+          <form
+            action="#"
+            class="subscribe__form"
+          >
+            <input
+              type="email"
+              name="email"
+              class="subscribe__input"
+              placeholder="E-mail"
+            />
+            <button
+              type="submit"
+              class="subscribe__btn"
+            >
+              Подписаться
+              <svg class="subscribe__icon">
+                <use
+                  href="./images/symbol-defs.svg#icon-send"
+                ></use>
+              </svg>
+            </button>
+          </form>
+        </div>
+      </div>
+    </footer>
+  </body>
+</html>

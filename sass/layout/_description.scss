@@ -1,0 +1,41 @@
+.description__icon-wrap {
+    height: 120px;
+    width: 270px;
+    background-color: var(--main-btn-background-color);
+    margin-bottom: 30px;
+    border-radius: 4px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.description__icon {
+    width: 70px;
+    height: 70px;
+}
+
+.description__list {
+    display: flex;
+}
+
+.description__item:not(:last-child) {
+    margin-right: 30px;
+}
+
+.description__subtitle {
+    font-weight: 700;
+    font-size: 14px;
+    line-height: 1.14;
+    letter-spacing: 0.03em;
+    text-transform: uppercase;
+    color: var(--main-subtitle-color);
+    margin-bottom: 10px;
+}
+
+.description__text {
+    font-size: 14px;
+    line-height: 1.71;
+    letter-spacing: 0.03em;
+    color: var(--main-text-color);
+    width: 270px;
+}
