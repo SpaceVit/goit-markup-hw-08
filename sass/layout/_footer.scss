@@ -1,23 +1,63 @@
 .footer {
     background-color: #2f303a;
     padding: 60px 0;
+
+    
 }
 
 .footer__container {
-    display: flex;
+    @media screen and (min-width: 768px) {
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+    }
+    
+    @media screen and (min-width: 1200px) {
+         display: flex;
+         flex-direction: row;
+        
+    }
+    
+    
+}
+
+.footer__top {
+    @media screen and (min-width: 768px) {
+        display: flex;
+        width: 100%; 
+    }
+      
+    
 }
 
 .footer__left {
-
-    width: 25%;
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 60px;
+    @media screen and (min-width: 1200px) {
+        width: auto;
+    }
+    
+   
 }
 
 .footer__logo{
     margin-bottom: 20px;
+    text-align: center;
+    @media screen and (min-width: 1200px) {
+        text-align: left;
+    }
 }
 
 .logo__part--light {
     color: var(--second-accent-color);
+}
+
+.address{
+    text-align: center;
+    @media screen and (min-width: 1200px) {
+        text-align: left;
+    }
 }
 
 .address__link {
@@ -42,8 +82,17 @@
 }
 
 .footer__center {
-    padding-left: 23px;
-    width: calc(25% + 15px);
+    
+    margin-bottom: 60px;
+    @media screen and (min-width: 768px) {
+        margin-left: auto;
+    }
+
+    @media screen and (min-width: 1200px) {
+       margin-left: 70px;
+       margin-bottom: 0;
+    }
+   
 }
 
 .invite__title {
@@ -54,10 +103,12 @@
     text-transform: uppercase;
     color: #FFFFFF;
     margin-bottom: 20px;
+    text-align: center;
 }
 
 .social {
     display: flex;
+    justify-content: center;
 }
 
 .social__item+.social__item {
@@ -89,12 +140,21 @@
 }
 
 .footer__right {
-    width: 50%;
+    display: flex;
+    flex-direction: column;
+    @media screen and (min-width: 1200px) {
+        width: 50%;
+    }
 }
 
 .subscribe__form {
     display: flex;
-    justify-content: space-between;
+    flex-direction: column;
+    justify-content: center;
+    @media screen and (min-width: 1200px) {
+        flex-direction: row;
+        width: 100%;
+    }
 }
 
 .subscribe__title {
@@ -105,6 +165,10 @@
     letter-spacing: 0.03em;
     text-transform: uppercase;
     color: var(--footer-text-color);
+    text-align: center;
+    @media screen and (min-width: 1200px) {
+       text-align: left;
+    }
 }
 
 .subscribe__input {
@@ -127,6 +191,13 @@
             color: var(--second-accent-color);
         }
     }
+    margin-bottom: 20px;
+    @media screen and (min-width: 768px) {
+        width: 450px;
+        margin: 0 auto;
+        margin-bottom: 20px;
+    }
+    
 }
 
 .subscribe__btn {
@@ -150,6 +221,11 @@
     &:focus,
     &:hover {
         border: 2px solid #2196f3;
+    }
+    margin: 0 auto;
+    @media screen and (min-width: 1200px) {
+        margin-left: 12px;
+        
     }
 }
 

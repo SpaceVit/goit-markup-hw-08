@@ -8,7 +8,7 @@
     transition: opacity 1000ms, visibility 1000ms;
 }
 
-.backdrop.is-hidden{
+.backdrop.is-hidden {
     .modal {
         transform: translate(-250%, -50%);
         transition: transform 1200ms cubic-bezier(.62, .52, .57, .84);
@@ -17,7 +17,7 @@
 
 .modal {
     padding: 40px;
-    width: 528px;
+    width: calc(100% - 30px);
     min-height: 581px;
     background: #FFFFFF;
     box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12),
@@ -29,6 +29,12 @@
     left: 50%;
     transform: translate(-50%, -50%);
     transition: transform 1200ms cubic-bezier(.62, .52, .57, .84);
+    @media screen and (min-width: 480px) {
+        width: 450px;
+    }
+    @media screen and (min-width: 1200px) {
+        width: 528px;
+    }
 
 }
 
@@ -63,12 +69,19 @@
 
 .modal__title {
     font-weight: bold;
-    font-size: 20px;
+    font-size: 13px;
     line-height: 1.15;
     text-align: center;
     letter-spacing: 0.03em;
     color: #212121;
     margin-bottom: 12px;
+    @media screen and (min-width: 480px) {
+        font-size: 20px;
+        line-height: 1.5;
+    }
+    @media screen and (min-width: 1200px) {
+        line-height: 1.15;
+    }
 }
 
 .modal__field {
@@ -143,12 +156,16 @@
 
 .modal__check-text {
     font-weight: 400;
-    font-size: 14px;
-    line-height: 1.71;
+    font-size: 12px;
+    line-height: 1.16;
     letter-spacing: 0.03em;
     color: var(--main-text-color);
     display: flex;
     align-items: center;
+    @media screen and (min-width: 1200px) {
+        font-size: 14px;
+        line-height: 1.71;
+    }
 }
 
 .modal__check-item {
