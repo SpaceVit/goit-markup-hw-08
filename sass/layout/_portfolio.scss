@@ -9,17 +9,25 @@
         margin-right: auto;
     }
     @media screen and (min-width: 1200px) {
+        margin: 0 auto;
         margin-bottom: 50px;
+        flex-wrap: nowrap;
     }
 }
 
 .examples__type {
-    margin-right: 8px;
+    &:not(:last-child){
+        margin-right: 8px;
+    }
     margin-bottom: 15px;
     flex-basis: calc(100% / 3 - 75px );
     @media screen and (min-width: 768px) {
         flex-basis: calc(100% / 5 - 75px);
         margin-bottom: 0;
+    }
+    @media screen and (min-width: 1200px) {
+        width:100%;
+        flex-basis: content;
     }
 
 }
